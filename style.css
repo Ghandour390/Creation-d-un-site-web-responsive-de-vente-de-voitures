@@ -1,0 +1,57 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #002147; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.navbar-logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-list {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-list li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+.navbar-left-content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.navbar-list-left{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+
+}
+.navbar-list-left li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+
+}
