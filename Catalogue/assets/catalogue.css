@@ -112,6 +112,11 @@ header nav img{
 }
 
 .shop_cars-catalogue{
+    display: flex;
+    flex-direction: column;
+}
+
+.shop_cars-catalogue .shop-cards{
     height: 100%;
     width: 100%;
     border-radius: 5px;
@@ -122,7 +127,7 @@ header nav img{
 
 .shop_cars-catalogue-card{
     background-color: var(--WhiteColor);
-    height: 300px;
+    height: 290px;
     width: 250px;
     border-radius: 5px;
     padding: var(--padding3);
@@ -134,6 +139,7 @@ header nav img{
 .shop_cars-catalogue-card img{
     height: 100px;
     width: 200px;
+    align-self: center;
 }
 
 .shop_cars-catalogue-card .part-2{
@@ -176,9 +182,37 @@ header nav img{
     column-gap: 5px;
 }
 
+.shop_cars-catalogue .displayed-bar{
+    display: none;
+}
+
+.shop_cars-catalogue .displayed-bar img{
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+}
 
 @media only screen and (max-width: 600px) {
+    .shop-main .side-bar{
+        display: none;
+    }
+
+    .shop_cars-catalogue .displayed-bar{
+        display: flex;
+        /* width: 250px; */
+        padding: var(--padding3);
+        justify-content: center;
+        justify-content: space-between;
+    }
+
+    .shop_cars-catalogue{
+        row-gap: 20px;
+    }
     
+
+    .shop_cars-catalogue .shop-cards{
+        justify-content: center;
+    }
 }
 
 
