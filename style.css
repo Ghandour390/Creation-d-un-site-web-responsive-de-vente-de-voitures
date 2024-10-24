@@ -195,28 +195,32 @@ body {
     max-height: 100%;
 }
 
-/* Cars section  */
 .car-section {
+    position: relative; 
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 20px;
-    background-color: #fff;
 }
-
 .car-image img {
-    width: 1000px;
-    border-radius: 10px;
-    height:326px;
+    width: 1200px;
+    border-radius: 2px;
+    height:426px;
+    background: no-repeat;
 }
 
 .overlay-text {
+     position: absolute;
+    top: 30%;
+    right: 122px; 
     width: 40%;
     background-color: #002855;
     padding: 30px;
     color: white;
     border-radius: 10px;
-    z-index:1;
+    height: 300px;
+    width:400px;
+    position: absolute;
+
 }
 
 .overlay-text h2 {
