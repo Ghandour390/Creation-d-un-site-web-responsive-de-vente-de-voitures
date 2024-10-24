@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/catalogue.css">
-    <link rel="icon" href="./assets/icons/ICON.png">
+    <link rel="stylesheet" href="../Catalogue/assets/catalogue.css">
+    <link rel="stylesheet" href="../Gestion/assets/css/gestion.css">
+    <link rel="icon" href="../Gestion/assets/icons/ICON.png">
     <title>Voiture</title>
 </head>
 <body>
@@ -12,119 +13,199 @@
     <header>
         <nav>
             <div class="logo">
-                <img src="./assets/icons/ICON.png" alt="">
+                <img src="../Gestion/assets/icons/ICON.png" alt="">
                 <h2>Voiture</h2>
             </div>
-            <img src="./assets/icons/Menu.png" alt="">
+            <img src="../Gestion/assets/icons/Menu.png" alt="">
         </nav>
     </header>
 
-    <section class="management">
-        <h2>Management</h2>
-        <div class="management_sous-title">
-            <p>Management</p>
-            <p>Home/Management</p>
+    <section class="shop">
+        <h2>Shop</h2>
+        <div class="shop_sous-title">
+            <p>Shop</p>
+            <p>Home/Shop</p>
         </div>
-
-        <div class="buttons">
-            <Button class="btn">Ajouter</Button>
-            <Button class="btn">Supprimer Tous</Button>
-        </div>
-
-        <!-- <div class="management_header-main">
-            <div style="background-color: #ECEBEB;" class="management_header">
-                <h4>Preview</h4>
-                <div class="management_header-right">
-                    <h4>Model</h4>
-                    <h4>Year</h4>
-                    <h4>Transmission</h4>
-                    <h4>FuelType</h4>
-                    <h4>Action</h4>
-                </div>
-            </div>
     
-            <div class="management_header">
-                <div style="display: flex; column-gap: 20px;   align-items: center;">
-                    <img src="./assets/icons/Audi.png" alt="">
-                    <div style="display: flex; flex-direction: column; row-gap: 15px;">
-                        <h4>Audi Q5x - 2020</h4>
-                        <p>$3,300,290</p>
-                    </div>
+    
+        <main class="shop-main">
+            <aside class="side-bar">
+                <div class="shop_categories">
+                    <h3>Categories</h3>
+                    <a href="">Exterior</a>
+                    <a href="">Exterior</a>
+                    <a href="">Exterior</a>
+                    <a href="">Exterior</a>
+                    <a href="">Exterior</a>
+                    <a href="">Exterior</a>
                 </div>
-                <div class="management_header-right">
-                    <h4>Audi</h4>
-                    <h4>2020</h4>
-                    <h4>Automaic</h4>
-                    <h4>Diesel</h4>
-                    <div class="action">
+        
+                <div class="shop_recent-posts">
+                    <h3>Recent posts</h3>
+                    <div>
+                        <img src="../Gestion/assets/icons/Audi.png" alt="">
                         <div>
-                            <img src="./assets/icons/delete.png" alt="">
-                        </div>
-                        <div>
-                            <img src="./assets/icons/show.png" alt="">
-                        </div>
-                        <div>
-                            <img src="./assets/icons/edit.png" alt="">
+                            <h3>$124</h3>
+                            <p>USB Air Compressor</p>
                         </div>
                     </div>
+                    <div>
+                        <img src="../Gestion/assets/icons/Audi.png" alt="">
+                        <div>
+                            <h3>$124</h3>
+                            <p>USB Air Compressor</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="../Gestion/assets/icons/Audi.png" alt="">
+                        <div>
+                            <h3>$124</h3>
+                            <p>USB Air Compressor</p>
+                        </div>
+                    </div>
                 </div>
+            </aside>
+        
+    
+            <div class="shop_cars-catalogue">
+                <div class="shop_cars-catalogue-card">
+                    <img src="../Gestion/assets/icons/Audi.png" alt="">
+                    <p>Categories</p>
+                    <div class="shop_stars">
+                        <img src="../Gestion/assets/icons/star.png" alt="">
+                        <img src="../Gestion/assets/icons/star.png" alt="">
+                        <img src="../Gestion/assets/icons/star.png" alt="">
+                        <img src="../Gestion/assets/icons/star.png" alt="">
+                        <p>4.7</p>
+                    </div>
+                    <div class="part-2">
+                        <div>
+                            <p><sub>$560</sub></p> <h3>390$</h3>
+                        </div>
+                        <div>
+                            <img src="../Gestion/assets/icons/bag.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="shop_cars-catalogue-card">
+                    <img src="../Gestion/assets/icons/Audi.png" alt="">
+                    <p>Categories</p>
+                    <div class="shop_stars">
+                        <img src="../Gestion/assets/icons/star.png" alt="">
+                        <img src="../Gestion/assets/icons/star.png" alt="">
+                        <img src="../Gestion/assets/icons/star.png" alt="">
+                        <img src="../Gestion/assets/icons/star.png" alt="">
+                        <p>4.7</p>
+                    </div>
+                    <div class="part-2">
+                        <div>
+                            <p><sub>$560</sub></p> <h3>390$</h3>
+                        </div>
+                        <div>
+                            <img src="../Gestion/assets/icons/bag.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_cars-catalogue-card">
+                    <img src="../Gestion/assets/icons/Audi.png" alt="">
+                    <p>Categories</p>
+                    <div class="shop_stars">
+                        <img src="../Gestion/assets/icons/star.png" alt="">
+                        <img src="../Gestion/assets/icons/star.png" alt="">
+                        <img src="../Gestion/assets/icons/star.png" alt="">
+                        <img src="../Gestion/assets/icons/star.png" alt="">
+                        <p>4.7</p>
+                    </div>
+                    <div class="part-2">
+                        <div>
+                            <p><sub>$560</sub></p> <h3>390$</h3>
+                        </div>
+                        <div>
+                            <img src="../Gestion/assets/icons/bag.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_cars-catalogue-card">
+                    <img src="../Gestion/assets/icons/Audi.png" alt="">
+                    <p>Categories</p>
+                    <div class="shop_stars">
+                        <img src="../Gestion/assets/icons/star.png" alt="">
+                        <img src="../Gestion/assets/icons/star.png" alt="">
+                        <img src="../Gestion/assets/icons/star.png" alt="">
+                        <img src="../Gestion/assets/icons/star.png" alt="">
+                        <p>4.7</p>
+                    </div>
+                    <div class="part-2">
+                        <div>
+                            <p><sub>$560</sub></p> <h3>390$</h3>
+                        </div>
+                        <div>
+                            <img src="../Gestion/assets/icons/bag.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_cars-catalogue-card">
+                    <img src="../Gestion/assets/icons/Audi.png" alt="">
+                    <p>Categories</p>
+                    <div class="shop_stars">
+                        <img src="../Gestion/assets/icons/star.png" alt="">
+                        <img src="../Gestion/assets/icons/star.png" alt="">
+                        <img src="../Gestion/assets/icons/star.png" alt="">
+                        <img src="../Gestion/assets/icons/star.png" alt="">
+                        <p>4.7</p>
+                    </div>
+                    <div class="part-2">
+                        <div>
+                            <p><sub>$560</sub></p> <h3>390$</h3>
+                        </div>
+                        <div>
+                            <img src="../Gestion/assets/icons/bag.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_cars-catalogue-card">
+                    <img src="../Gestion/assets/icons/Audi.png" alt="">
+                    <p>Categories</p>
+                    <div class="shop_stars">
+                        <img src="../Gestion/assets/icons/star.png" alt="">
+                        <img src="../Gestion/assets/icons/star.png" alt="">
+                        <img src="../Gestion/assets/icons/star.png" alt="">
+                        <img src="../Gestion/assets/icons/star.png" alt="">
+                        <p>4.7</p>
+                    </div>
+                    <div class="part-2">
+                        <div>
+                            <p><sub>$560</sub></p> <h3>390$</h3>
+                        </div>
+                        <div>
+                            <img src="../Gestion/assets/icons/bag.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_cars-catalogue-card">
+                    <img src="../Gestion/assets/icons/Audi.png" alt="">
+                    <p>Categories</p>
+                    <div class="shop_stars">
+                        <img src="../Gestion/assets/icons/star.png" alt="">
+                        <img src="../Gestion/assets/icons/star.png" alt="">
+                        <img src="../Gestion/assets/icons/star.png" alt="">
+                        <img src="../Gestion/assets/icons/star.png" alt="">
+                        <p>4.7</p>
+                    </div>
+                    <div class="part-2">
+                        <div>
+                            <p><sub>$560</sub></p> <h3>390$</h3>
+                        </div>
+                        <div>
+                            <img src="../Gestion/assets/icons/bag.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <hr>
-            <div class="management_header">
-                <div style="display: flex; column-gap: 20px;   align-items: center;">
-                    <img src="./assets/icons/Audi.png" alt="">
-                    <div style="display: flex; flex-direction: column; row-gap: 15px;">
-                        <h4>Audi Q5x - 2020</h4>
-                        <p>$3,300,290</p>
-                    </div>
-                </div>
-                <div class="management_header-right">
-                    <h4>Audi</h4>
-                    <h4>2020</h4>
-                    <h4>Automaic</h4>
-                    <h4>Diesel</h4>
-                    <div class="action">
-                        <div>
-                            <img src="./assets/icons/delete.png" alt="">
-                        </div>
-                        <div>
-                            <img src="./assets/icons/show.png" alt="">
-                        </div>
-                        <div>
-                            <img src="./assets/icons/edit.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div class="management_header">
-                <div style="display: flex; column-gap: 20px;   align-items: center;">
-                    <img src="./assets/icons/Audi.png" alt="">
-                    <div style="display: flex; flex-direction: column; row-gap: 15px;">
-                        <h4>Audi Q5x - 2020</h4>
-                        <p>$3,300,290</p>
-                    </div>
-                </div>
-                <div class="management_header-right">
-                    <h4>Audi</h4>
-                    <h4>2020</h4>
-                    <h4>Automaic</h4>
-                    <h4>Diesel</h4>
-                    <div class="action">
-                        <div>
-                            <img src="./assets/icons/delete.png" alt="">
-                        </div>
-                        <div>
-                            <img src="./assets/icons/show.png" alt="">
-                        </div>
-                        <div>
-                            <img src="./assets/icons/edit.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr>
-        </div> -->
+        </main>
+
 
 
     </section>
@@ -132,7 +213,7 @@
     <footer>
         <div class="footer-firstElement">
             <div class="logo">
-                <img src="./assets/icons/ICON.png" alt="">
+                <img src="../Gestion/assets/icons/ICON.png" alt="">
                 <h2>Voiture</h2>
             </div>
             <ul>
@@ -146,19 +227,19 @@
         <div class="footer-secondElement">
             <div class="secondElement">
                 <div class="office footer-item">
-                    <h4>OFFICE</h4>
+                    <h5>OFFICE</h5>
                     <p>Germany <br>—329 Queensberry Street, <br>North Melbourne VIC 3051</p>
                 </div>
                 <div class="need-help footer-item">
-                    <h4>NEED HELP</h4>
+                    <h5>NEED HELP</h5>
                     <p>+1 670 936 46 70<br>hello@voiture.com</p>
                 </div>
                 <div class="opening-hours footer-item">
-                    <h4>OPENING HOURS</h4>
+                    <h5>OPENING HOURS</h5>
                     <p>Monday - Friday: 09:00AM - 09:00PM <br>Saturday: 09:00AM - 07:00PM <br>Sunday: Closed</p>
                 </div>
                 <div class="keep-in-touch footer-item">
-                    <h4>KEEP IN TOUCH</h4>
+                    <h5>KEEP IN TOUCH</h5>
                     <input type="email" placeholder="Enter your Email" id="email" name="email">
                     <p>Get latest updates and offers.</p>
                 </div>
@@ -166,10 +247,10 @@
             <div class="thirdElement">
                 <p>ib-themes © 2023. All Rights Reserved.</p>
                 <div class="footer-thirdElement-icons">
-                    <img class="footer-thirdElement-icon" src="./assets/icons/Facebook Blanc.png" alt="">
-                    <img class="footer-thirdElement-icon" src="./assets/icons/Insta Blanc.png" alt="">
-                    <img class="footer-thirdElement-icon" src="./assets/icons/Twitter Blanc.png" alt="">
-                    <img class="footer-thirdElement-icon" src="./assets/icons/Linked in Blanc.png" alt="">
+                    <img class="footer-thirdElement-icon" src="../Gestion/assets/icons/Facebook Blanc.png" alt="">
+                    <img class="footer-thirdElement-icon" src="../Gestion/assets/icons/Insta Blanc.png" alt="">
+                    <img class="footer-thirdElement-icon" src="../Gestion/assets/icons/Twitter Blanc.png" alt="">
+                    <img class="footer-thirdElement-icon" src="../Gestion/assets/icons/Linked in Blanc.png" alt="">
                 </div>
             </div>
         </div>
