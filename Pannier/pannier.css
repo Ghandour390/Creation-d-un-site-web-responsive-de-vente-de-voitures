@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration:none ;
+    text-decoration: none;
     list-style: none;
 }
 
@@ -22,6 +22,49 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.navbar{
+   
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    padding: var(--padding3);
+
+
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+}
+li a {
+    font-size: 18px; margin-right: 25px;
+    font-size: 16;
+    color: black;
+}
+.ha{
+    font-size: 24;
+   
+    padding: 0 var(--padding3);
+}
+.d1{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    padding: 0 var(--padding3);
+}
+ .tab1{
+   margin-left: 30px;
+    width: 60%;
+ }
+
+.tab1.tr.th{
+    padding: var(--BlueColor);
+    border: 20px;
+    background-color: 1B3363;
+text-align: left;
+
+}
+/*Footer*/
 footer {
     color: var(--WhiteColor);
     background-color: var(--BlueColor);
