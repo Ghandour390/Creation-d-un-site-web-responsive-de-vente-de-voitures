@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --padding : 8%;
+    --padding2 : 4%;
+    --padding3 : 2%;
+    --BlueColor: #0A2357;
+    --OrangeColor: #F5C34B;
+    --WhiteColor: white;
+    --DarkGreyColor: #ECEBEB;
+    --LightGreyColor: #F4F4F4;
+}
+
+html{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HOME */
+header nav{
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding3);
+    align-items: center;
+}
+
+header nav img{
+    height: 32px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.management{
+    padding: var(--padding3);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.management .management_sous-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.management .management_sous-title p{
+    font-size: small;
+}
+
+
+.management .buttons .btn{
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.management .buttons .btn-1{
+    background-color: var(--OrangeColor);
+    color: var(--BlueColor);
+}
+
+.management .buttons .btn-2{
+    background-color: var(--BlueColor);
+    color: var(--WhiteColor);
+}
+
+
+.management_header-main table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.management_header-main table thead{
+    background-color: var(--DarkGreyColor);
+    
+}
+
+.management_header-main table thead tr th, .management_header-main table tbody tr td{
+    text-align: start;
+    padding: 15px 20px;
+}
+
+.td-flexed-row{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.management_header-main table tbody tr .td-flexed-row img{
+    height: 100px;
+    width: 200px;
+}
+
+.management_header-main table tbody tr .td-flexed-row div{
+    width: 200px;
+}
+
+.management_header-main table tbody tr .td-actions img{
+    height: 30px;
+    width: 30px;
+    background-color: var(--DarkGreyColor);
+    cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .management_header-main{
+        overflow-x: auto;
+    }
+    
+}
+
+
+
+
+
+
+
+/* FOOTER */
+footer {
+    color: var(--WhiteColor);
+    background-color: var(--BlueColor);
+    height: 50vh;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.logo img{
+    width: 50px;
+    height: 50px;
+}
+
+.footer-firstElement{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding3);
+}
+
+.footer-firstElement ul li{
+    display: inline-block;
+}
+
+.footer-firstElement ul li a{
+    color: var(--WhiteColor);
+    padding-right: 30px;
+}
+
+.footer-secondElement{
+    display: flex;
+    padding: var(--padding3);
+    justify-content: space-between;
+    flex-direction: column;
+    height: auto;
+}
+
+.secondElement{
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+}
+
+.secondElement input{
+    padding: 12px;
+    border-end-end-radius: 10px;
+    border-top-right-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+.thirdElement{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-basis: 200px;
+}
+
+footer p{
+    color: var(--LightGreyColor);
+    line-height: 30px;
+    font-size: small;
+}
+
+.footer-thirdElement-icon{
+    height: 24px;
+    width: 24px;
+}
+
+.footer-thirdElement-icons{
+    display: flex;
+    column-gap: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    footer{
+        height: auto;
+    }
+    .footer-firstElement{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 20px;
+        padding: var(--padding2);
+    }
+
+    .secondElement{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: start;
+    }
+
+    .footer-secondElement{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: var(--padding2);
+    }
+    .thirdElement{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: flex-start;
+    }
+}
