@@ -5,10 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
     <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="../Catalogue/assets/catalogue.css">
+    <link rel="stylesheet" href="../nav.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
 <body>
-    <div class="checkout-container">
-        <h1>Shop Checkout</h1>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../Gestion/assets/icons/ICON.png" alt="Car Icon" class="icon">
+                <h2>Voiture</h2>
+            </div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="checkout-container">
+ <div class="checkout-containe-text-2">
+        <h1 class="txt-section-checkout">Shop Checkout</h1>    
+    
+    </div>
+    
         <div class="checkout-content">
             <form class="form-checkout-main">
                 <h2>Billing details</h2>
@@ -103,6 +126,91 @@
                 <button type="submit" class="place-order-btn">Place Order</button>
             </div>
         </div>
-    </div>
+    </section>
+    <footer>
+        <div class="footer-firstElement">
+            <div class="logo">
+                <img src="../Gestion/assets/icons/ICON.png" alt="">
+                <h2>Voiture</h2>
+            </div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Service</a></li>
+                <li><a style="padding-right: 0px;" href="">Contact</a></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="footer-secondElement">
+            <div class="secondElement">
+                <div class="office footer-item">
+                    <h4>OFFICE</h4>
+                    <p>Germany <br>—329 Queensberry Street, <br>North Melbourne VIC 3051</p>
+                </div>
+                <div class="need-help footer-item">
+                    <h4>NEED HELP</h4>
+                    <p>+1 670 936 46 70<br>hello@voiture.com</p>
+                </div>
+                <div class="opening-hours footer-item">
+                    <h4>OPENING HOURS</h4>
+                    <p>Monday - Friday: 09:00AM - 09:00PM <br>Saturday: 09:00AM - 07:00PM <br>Sunday: Closed</p>
+                </div>
+                <div class="keep-in-touch footer-item">
+                    <h4>KEEP IN TOUCH</h4>
+                    <input type="email" placeholder="Enter your Email" id="email" name="email">
+                    <p>Get latest updates and offers.</p>
+                </div>
+            </div>
+            <div class="thirdElement">
+                <p>ib-themes © 2023. All Rights Reserved.</p>
+                <div class="footer-thirdElement-icons">
+                    <img class="footer-thirdElement-icon" src="../Gestion/assets/icons/Facebook Blanc.png" alt="">
+                    <img class="footer-thirdElement-icon" src="../Gestion/assets/icons/Insta Blanc.png" alt="">
+                    <img class="footer-thirdElement-icon" src="../Gestion/assets/icons/Twitter Blanc.png" alt="">
+                    <img class="footer-thirdElement-icon" src="../Gestion/assets/icons/Linked in Blanc.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const bnt = document.querySelector(".place-order-btn");
+        
+            bnt.addEventListener("click", function(event) {
+                event.preventDefault();
+        
+                const fname = document.getElementById("fname").value.trim();
+                const lname = document.getElementById("lname").value.trim();
+                const country = document.getElementById("country").value;
+                const address = document.getElementById("address").value.trim();
+                const postcode = document.getElementById("postcode").value.trim();
+                const city = document.getElementById("city").value.trim();
+                const province = document.getElementById("province").value.trim();
+                const phone = document.getElementById("phone").value.trim();
+                const email = document.getElementById("email").value.trim();
+                        if (!fname || !lname || !country || !address || !postcode || !city || !province || !phone || !email) {
+                    Swal.fire({
+                        icon: 'warning',
+                        title: 'Incomplete Information',
+                        text: 'Please fill in all required fields.',
+                        confirmButtonText: 'OK'
+                    });
+
+                    window.location.href = "./";
+
+                } else {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Order Placed!',
+                        text: 'Your order has been placed successfully.',
+                        confirmButtonText: 'OK'
+                    }).then(() => {
+                        document.querySelector(".form-checkout-main").submit();
+                    });
+                }
+            });
+        });
+        </script>
+        
 </body>
 </html>

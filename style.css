@@ -24,13 +24,17 @@ body {
     background-color: transparent;
     padding: 15px 30px;
     width: 100vw;
+    height: 100px;;
     z-index: 1000;
+
 }
 
 .navbar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 12px;
+
 }
 .navbar.scrolled {
     background-color: rgba(0, 0, 0, 0.8);
@@ -254,7 +258,10 @@ margin-bottom: auto;
     text-align: center;
     padding: 40px 20px;
 }
-
+#mark-img-size{
+    height:100px;
+    width:100px;
+}
 .popular-markes-section h2 {
     font-size: 24px;
     font-weight: bold;
@@ -681,11 +688,13 @@ p {
     align-items: center;
     gap: 5px;
     margin-bottom: 10px;
+    width: 15px;
+    height: 15px;
 }
 
-.shop-stars img {
-    width: 16px;
-    height: 16px;
+#bag-add-to-cart {
+    width: 22px;
+    height: 22px;
 }
 
 .part-2 {
@@ -707,9 +716,10 @@ p {
 
 .add-to-cart {
     background-color: #f5c24b72;
-    border-radius: 50%;
+    border-radius: 30%;
     padding: 10px;
     cursor: pointer;
+    height: 42px;
     transition: transform 0.3s ease;
 }
 
