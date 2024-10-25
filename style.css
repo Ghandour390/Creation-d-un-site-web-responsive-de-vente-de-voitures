@@ -32,6 +32,10 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: background-color 0.3s ease;
+}
 
 .menu-toggle {
     display: none;
@@ -199,6 +203,51 @@ body {
 .bntB p {
     margin-top: 10px;
     font-size: 16px;
+}
+
+/* Responsive styles for max-width 600px */
+@media (max-width: 600px) {
+    .Banner_section {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        height: 100vh;
+    }
+
+    .banner-text {
+display: flex;
+flex-direction: column; 
+justify-content: center;
+align-items: center;  
+margin-top: auto;
+margin-bottom: auto;
+     max-width: 90%;
+    }
+
+    .banner-text h1 {
+        font-size: 32px;
+    }
+
+    .banner-text p {
+        font-size: 14px;
+    }
+
+    .bntB {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-btn2 {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .bntB p {
+        font-size: 14px;
+    }
 }
 /* Popular Markes Section */
 .popular-markes-section {

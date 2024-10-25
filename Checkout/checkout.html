@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <div class="checkout-container">
+        <h1>Shop Checkout</h1>
+        <div class="checkout-content">
+            <form class="form-checkout-main">
+                <h2>Billing details</h2>
+                <div class="billing-details-grid">
+                    <div class="input-group">
+                        <label >First name *</label>
+                        <input type="text" id="fname" placeholder="First name">
+                    </div>
+                    <div class="input-group">
+                        <label >Last name *</label>
+                        <input type="text" id="lname" placeholder="Last name">
+                    </div>
+                    <div class="input-group">
+                        <label >Company name (optional)</label>
+                        <input type="text" id="company" placeholder="Company name">
+                    </div>
+                    <div class="input-group">
+                        <label >Country / Region *</label>
+                        <select id="country">
+                            <option value="marrakech">Marrakech</option>
+                            <option value="marrakech">Marrakech</option>
+
+                            <option value="marrakech">Marrakech</option>
+
+                            <option value="marrakech">Marrakech</option>
+
+                            <option value="marrakech">Marrakech</option>
+
+                            <option value="marrakech">Marrakech</option>
+
+
+                            <!-- Add more countries as needed -->
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label >Street address *</label>
+                        <input type="text" id="address" placeholder="Street address">
+                    </div>
+                    <div class="input-group">
+                        <label >Postcode / ZIP *</label>
+                        <input type="text" id="postcode" placeholder="Postcode / ZIP">
+                    </div>
+                    <div class="input-group">
+                        <label >Town / City *</label>
+                        <input type="text" id="city" placeholder="Town / City">
+                    </div>
+                    <div class="input-group">
+                        <label >Province *</label>
+                        <input type="text" id="province" placeholder="Province">
+                    </div>
+                    <div class="input-group">
+                        <label >Phone *</label>
+                        <input type="text" id="phone" placeholder="Phone">
+                    </div>
+                    <div class="input-group">
+                        <label>Your Email *</label>
+                        <input type="email" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="input-group-textarea">
+                        <label >Order notes (optional)</label>
+                        <textarea class="textarea-costimise" placeholder="Order notes"></textarea>
+                    </div>
+                </div>
+            </form>
+            
+
+            <div class="order-summary">
+                <h2>Your Order</h2>
+                <ul>
+                    <li>cars ×2 <span>$250.00</span></li>
+                    <li>Set cars ×1 <span>$250.00</span></li>
+                    <li>Subtotal <span>$500.00</span></li>
+                    <li>Total <span>$521.00</span></li>
+                </ul>
+
+                <div class="payment-methods">
+                    <h3>Payment Methods</h3>
+                    <label>
+                        <input type="radio" name="payment-method" checked> Direct bank transfer
+                    </label>
+                    <label>
+                        <input type="radio" name="payment-method"> Check payments
+                    </label>
+                    <label>
+                        <input type="radio" name="payment-method"> Cash on delivery
+                    </label>
+                    <label>
+                        <input type="radio" name="payment-method"> PayPal
+                    </label>
+                </div>
+
+                <button type="submit" class="place-order-btn">Place Order</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -17,7 +17,6 @@
             <span class="brand">Voiture</span>
         </div>
         <div class="menu-toggle" onclick="toggleMenu()">
-            <!-- Hamburger Icon -->
             <span>&#9776;</span>
         </div>
         <ul class="nav-links" id="nav-links">
@@ -289,7 +288,7 @@
             </div>        </div>
         </div>
     </section>
-    <!-- Car section with overlay text -->
+    <!-- Car section  -->
     <section class="car-section">
         <div class="car-image">
              <img src="./Catalogue/assets/icons/image 19.png" alt="Car Image">
@@ -371,7 +370,7 @@
         </div>
     </section>
 
-    <!-- Recent Articles Section -->
+    <!--  Articles Section -->
     <section class="recent-articles-section">
         <h2>Recent Articles</h2>
         <div class="articles-container">
@@ -419,9 +418,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Font Awesome for Icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <footer>
         <div class="footer-firstElement">
             <div class="logo">
@@ -472,7 +468,17 @@
             const nav = document.getElementById("nav-links");
             nav.classList.toggle("active");
         }
+window.addEventListener("scroll", function() {
+    const navbar = document.querySelector(".navbar");
+    if (window.scrollY > 1000) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+});
+
     </script>
+    
 </body>
 </html>
 
