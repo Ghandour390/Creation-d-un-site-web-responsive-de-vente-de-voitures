@@ -1,0 +1,159 @@
+*{
+    background-color: #f0ecf4;
+    margin: 0;
+    padding: 0;
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap')
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jomolhari&display=swap');
+
+}
+
+     .Ssign_in{
+        width: 40%;
+      margin-left: 6vw;  
+      margin-top: 8vh;      
+     }
+       #Ssign_in{
+        font-family:  "Inter", sans-serif;
+        font-size: 3vw;
+        color: #1B3761;
+        width: auto;
+       }
+
+    #Snew{
+        font-size: 1.5vh;
+        margin-top: 1vh ;
+        margin-bottom: 2vh ;
+    }
+    .Sname{
+        font-family: "Jomolhari", serif;;
+        margin-bottom: 7px ;
+        font-size: 1vw ;
+        color: #1B3761;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .Ssign_in input{
+        margin-right: 1vw;
+        font-size: 1vw;
+        width: 97.5%;
+        margin-bottom: 1.667vw ;
+        padding: 1vw ;
+        padding-right: 8vw ;
+        background-color: #ffffff;
+        border-radius: 1vh ;
+        border: solid 0.3vh #EDEBEB;
+        box-shadow: 0px 3px 8px 0 #bab8be, 0 3px 50px 0 #bab8be;
+    }
+    .SR{
+        margin-top: 1.5vh;
+        background-color: rgba(0, 0, 0, 0);
+        font-family: "Inter", sans-serif;
+        color: #1B3761;
+        margin-bottom: 1vh;
+    }
+    button{
+        background-color: #E6AA1B ;
+        padding: 1.5vh;
+        padding-right: 4.7vw;
+        padding-left: 4.7vw;
+        border-radius: 11px ;
+        border: none;
+    }
+    #Slost{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top:-2vh ;
+        font-size: 0.9vw;
+        color: #0058BD;
+    }
+    #Slost p{
+        margin-top: 11px;
+        font-size:  0.8vw;
+        background-color: rgba(0, 0, 0, 0);
+        
+    }
+    .Sbut{
+        font-size:1.5vw ;
+        font-weight:bolder;
+        color: #1B3761;
+        background-color: #E6AA1B;
+    }
+    .Sall{
+        display: flex;
+        justify-content: space-evenly;
+        width:auto;
+        flex-wrap: wrap;
+    }
+   .Sface{
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+   }
+   .Sbutton1{
+    height: 6vh;
+    width: auto;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    margin: 1vw;
+    border: solid , 3px ,#1967D2; 
+    align-items: center;
+    box-shadow: 0px 3px 8px 0 #bab8be, 0 3px 50px 0 #bab8be;
+   }
+   .Sbutton2{
+    height: 6vh;
+    width: auto;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1vw;
+    border: solid , 3px ,#D93025;
+   box-shadow: 0px 3px 8px 0 #bab8be, 0 3px 50px 0 #bab8be;
+
+   }
+   .Sbutton2 h6{
+    color: #D93025;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    font-size: 1vh;
+    background-color: #ffffff;
+   }
+   .Sbutton1 h6{
+    color: #1967D2;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    align-items: center;
+    font-size: 1vh;
+    background-color: #ffffff;
+   }
+   #Stxt{
+    margin-bottom: 2vw;
+    font-size: 2.5vh ;
+    font-family: "Inter", sans-serif;
+     color: #1B3761;
+   }
+   .Ssocials{
+    width: auto;
+    margin-top: 10vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   .Scon{
+    display: flex;
+    
+   }
+   .Scon #Sli{
+        margin-right: 15.5vw;
+   }
+   .Simg{
+    height: 80%;
+    width: auto;
+    margin: 1vh;
+   }
+   

@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration:none ;
+    text-decoration: none;
     list-style: none;
 }
 
@@ -15,6 +15,7 @@
     --WhiteColor: white;
     --DarkGreyColor: #ECEBEB;
     --LightGreyColor: #F4F4F4;
+    --OrchidColor: #F0ECF4;
 }
 
 html{
@@ -22,7 +23,11 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* HOME */
+body{
+    background-color: var(--OrchidColor);
+}
+
+/* Personalisation */
 header nav{
     display: flex;
     justify-content: space-between;
@@ -36,89 +41,109 @@ header nav img{
     cursor: pointer;
 }
 
-.management{
+.personalisation{
     padding: var(--padding3);
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
+    justify-content: space-between;
+    row-gap: 70px;
 }
 
-.management .management_sous-title{
+.personalisation_main{
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-
-.management .management_sous-title p{
-    font-size: small;
+.personalisation_main .personalisation_left-side img{
+    min-width: 200px;
 }
 
-
-.management .buttons .btn{
-    padding: 10px;
-    border: none;
-    outline: none;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.management .buttons .btn-1{
-    background-color: var(--OrangeColor);
-    color: var(--BlueColor);
-}
-
-.management .buttons .btn-2{
-    background-color: var(--BlueColor);
-    color: var(--WhiteColor);
-}
-
-
-.management_header-main table{
+.personalisation_main .personalisation_left-side .personalisation_car{
+    background-color: white;
     width: 100%;
-    border-collapse: collapse;
-}
-
-.management_header-main table thead{
-    background-color: var(--DarkGreyColor);
-    
-}
-
-.management_header-main table thead tr th, .management_header-main table tbody tr td{
-    text-align: start;
-    padding: 15px 20px;
-}
-
-.td-flexed-row{
+    height: 60%;
     display: flex;
     align-items: center;
-    column-gap: 20px;
+    justify-content: center;
+    border-radius: 5px;
 }
 
-.management_header-main table tbody tr .td-flexed-row img{
-    height: 100px;
-    width: 200px;
+
+.personalisation_main .personalisation_left-side{
+    row-gap: 30px;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
 }
 
-.management_header-main table tbody tr .td-flexed-row div{
-    width: 200px;
+.personalisation_main .personalisation_right-side{
+    padding: var(--padding2);
+    height: auto;
+    background-color: var(--WhiteColor);
+    margin-top: 58px;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 30px;
 }
 
-.management_header-main table tbody tr .td-actions img{
-    height: 30px;
-    width: 30px;
+.personalisation_right-side .palette {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px; 
+}
+
+.personalisation_main .personalisation_right-side div h4{
+    padding: 20px;
     background-color: var(--DarkGreyColor);
-    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
 
+.personalisation_right-side .personalisation-color {
+    width: 48%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.personalisation_right-side .personalisation-color div {
+    height: 50px; 
+    width: 100%;
+    border-radius: 5px; 
+    background: red; 
+    margin-bottom: 5px; 
+    border: 1px solid black;
+}
+
+.personalisation_right-side .personalisation-color img{
+    height: 160px;
+    width: 160px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
 
 
 @media only screen and (max-width: 600px) {
-    .management_header-main{
-        overflow-x: auto;
+    .personalisation_main{
+        flex-direction: column;
     }
-    
+
+    .personalisation_main .personalisation_right-side{
+        width: 100%;
+    } 
+
+    .personalisation_main .personalisation_left-side{
+        width: 100%;
+    }
 }
 
 
@@ -164,6 +189,7 @@ footer {
 .footer-secondElement{
     display: flex;
     padding: var(--padding3);
+    padding-bottom: 0;
     justify-content: space-between;
     flex-direction: column;
     height: auto;
@@ -206,11 +232,17 @@ footer p{
 .footer-thirdElement-icon{
     height: 24px;
     width: 24px;
+    transition: 0.4s;
+    cursor: pointer;
 }
 
 .footer-thirdElement-icons{
     display: flex;
     column-gap: 30px;
+}
+
+.footer-thirdElement-icon:hover {
+    opacity: 0.7;
 }
 
 @media only screen and (max-width: 600px) {
