@@ -97,7 +97,18 @@ justify-content: start;
 .payment-methods input {
     margin-right: 10px;
 }
-
+.place-order-btn-2 {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #45de82;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
 .place-order-btn {
     display: block;
     width: 100%;
