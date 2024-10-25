@@ -3,35 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Home page</title>
+    <title>Home page</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <!-- navbar section -->
         <nav class="navbar">
-            <div class="menu-icon">
-                <span class="menu-toggle">&#9776;</span>
-            </div>
-         <ul class="navbar-list-left">
-            <div class="navbar-left-content">
-                <li><a href="#" id="navbar-left-items">Login</a></li>
-                <li><a href="#" id="navbar-left-items">Register</a></li>
-            </div>
-         </ul>
-            <ul class="navbar-list">
             
-                <div class="navbar-logo">
-                    <a href="#">Logo</a>
+            <div class="navbar-container">
+                <div class="auth-buttons">
+                    <span>🔍</span>
+                    <button class="add-listing">+ Add listing</button>
+                    <div class="login-register">
+                        <a href="#">Login</a> <span id="blanch">|</span> <a href="#">Register</a>
+                    </div>
                 </div>
-
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Explore</a></li>
-                <li><a href="#">Listings</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Shop</a></li>
-              
-            </ul>
+                <div class="nav_logo">
+                    <span class="icon"><img src="./Catalogue/assets/icons/ICON.png" alt="Car Icon"></span>
+                    <span class="brand">Voiture</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">Listings</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Shop</a></li>
+                </ul>
+         
+            </div>
         </nav>
-    </header>
+        <!-- banner section  -->
+         <section class="Banner_section">
+            <div class="banner-text">
+                <h1><span>20.597</span> Vehicle Available</h1>
+                <p>Team of experienced mobile and web application developers.</p>
+                <div class="bntB">
+                    <div class="bnt-call-items">
+                        <a href="#" class="btn-btn2">Sign up</a>
+                    </div>
+                    <div id="bnt-call-items2">
+                    <p>CALL NOW <br> +212609927834</p>
+                </div>
+                </div>
+         </section>
+
+          <!-- Popular Marks Section -->
+    <section class="popular-markes-section">
+        <h2>Popular Markes</h2>
+        <div class="markes-container">
+            <div class="marke">
+                <img src="./Catalogue/assets/icons/logo.png" alt="Marke 1">
+            </div>
+            <div class="marke">
+                <img src="./Catalogue/assets/icons/logo.png" alt="Marke 2">
+            </div>
+            <div class="marke">
+                <img src="./Catalogue/assets/icons/logo.png" alt="Marke 3">
+            </div>
+            <div class="marke">
+                <img src="./Catalogue/assets/icons/logo.png" alt="Marke 4">
+            </div>
+            <div class="marke">
+                <img src="./Catalogue/assets/icons/logo.png" alt="Marke 5">
+            </div>
+        </div>
+    </section>
+
+    <!-- Car section with overlay text -->
+    <section class="car-section">
+        <div class="car-image">
+             <img src="./Catalogue/assets/icons/image 19.png" alt="Car Image">
+        </div>
+        <div class="overlay-text">
+            <h2>Lorem Ipsum is simply</h2>
+            <p>
+                a team of experienced mobile and web applications and website builders measuring dozens of completed projects. We build <br>
+                a team of experienced mobile and web applications and website builders.
+            </p>
+            <button class="signup-btn">Sign up</button>
+        </div>
+    </section>
 </body>
 </html>
