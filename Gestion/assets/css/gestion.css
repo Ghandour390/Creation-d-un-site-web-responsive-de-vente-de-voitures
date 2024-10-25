@@ -22,6 +22,112 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* HOME */
+header nav{
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding3);
+    align-items: center;
+}
+
+header nav img{
+    height: 32px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.management{
+    padding: var(--padding3);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.management .management_sous-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.management .management_sous-title p{
+    font-size: small;
+}
+
+
+.management .buttons .btn{
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.management .buttons .btn-1{
+    background-color: var(--OrangeColor);
+    color: var(--BlueColor);
+}
+
+.management .buttons .btn-2{
+    background-color: var(--BlueColor);
+    color: var(--WhiteColor);
+}
+
+
+.management_header-main table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.management_header-main table thead{
+    background-color: var(--DarkGreyColor);
+    
+}
+
+.management_header-main table thead tr th, .management_header-main table tbody tr td{
+    text-align: start;
+    padding: 15px 20px;
+}
+
+.td-flexed-row{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.management_header-main table tbody tr .td-flexed-row img{
+    height: 100px;
+    width: 200px;
+}
+
+.management_header-main table tbody tr .td-flexed-row div{
+    width: 200px;
+}
+
+.management_header-main table tbody tr .td-actions img{
+    height: 30px;
+    width: 30px;
+    background-color: var(--DarkGreyColor);
+    cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .management_header-main{
+        overflow-x: auto;
+    }
+    
+}
+
+
+
+
+
+
+
+/* FOOTER */
 footer {
     color: var(--WhiteColor);
     background-color: var(--BlueColor);
@@ -37,9 +143,6 @@ footer {
 .logo img{
     width: 50px;
     height: 50px;
-    border: 1px solid transparent;
-    border-radius: 50%;
-    background-color: #0A2357;
 }
 
 .footer-firstElement{
@@ -59,20 +162,17 @@ footer {
 }
 
 .footer-secondElement{
-    /* display: grid;
-    grid-template-rows: 50% 50%;
-    grid-gap: 50px; */
     display: flex;
     padding: var(--padding3);
     justify-content: space-between;
     flex-direction: column;
-    height: 80%;
+    height: auto;
 }
 
 .secondElement{
     display: flex;
     justify-content: space-between;
-    height: 30%;
+    height: auto;
 }
 
 .secondElement input{
@@ -93,8 +193,6 @@ footer {
 .footer-item{
     display: flex;
     flex-direction: column;
-    height: 40px;
-    width: 270px;
     gap: 10px;
     flex-basis: 200px;
 }
