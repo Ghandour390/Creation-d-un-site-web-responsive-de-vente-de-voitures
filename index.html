@@ -9,31 +9,36 @@
 
 </head>
 <body>
-    <!-- navbar section -->
-        <nav class="navbar">
-            
-            <div class="navbar-container">
-                <div class="auth-buttons">
-                    <span>🔍</span>
-                    <button class="add-listing">+ Add listing</button>
-                    <div class="login-register">
-                        <a href="#">Login</a> <span id="blanch">|</span> <a href="#">Register</a>
-                    </div>
-                </div>
-                <div class="nav_logo">
-                    <span class="icon"><img src="./Catalogue/assets/icons/ICON.png" alt="Car Icon"></span>
-                    <span class="brand">Voiture</span>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Explore</a></li>
-                    <li><a href="#">Listings</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Shop</a></li>
-                </ul>
-         
+   <!-- Navbar Section -->
+<nav class="navbar">
+    <div class="navbar-container">
+        <div class="nav_logo">
+            <span class="icon"><img src="./Catalogue/assets/icons/ICON.png" alt="Car Icon"></span>
+            <span class="brand">Voiture</span>
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <!-- Hamburger Icon -->
+            <span>&#9776;</span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Listings</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Shop</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <span>🔍</span>
+            <button class="add-listing">+ Add listing</button>
+            <div class="login-register">
+                <a href="#">Login</a> <span id="blanch">|</span> <a href="#">Register</a>
             </div>
-        </nav>
+        </div>
+    </div>
+</nav>
+
+
+
         <!-- banner section  -->
          <section class="Banner_section">
             <div class="banner-text">
@@ -462,6 +467,12 @@
             </div>
         </div>
     </footer>
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById("nav-links");
+            nav.classList.toggle("active");
+        }
+    </script>
 </body>
 </html>
 
