@@ -52,17 +52,145 @@ li a {
     justify-content: space-between;
     padding: 0 var(--padding3);
 }
- .tab1{
-   margin-left: 30px;
-    width: 60%;
+ .tabcart{
+  margin-left: 5%;
+  width: 60%;
  }
 
-.tab1.tr.th{
-    padding: var(--BlueColor);
-    border: 20px;
-    background-color: 1B3363;
-text-align: left;
 
+ .contitr{
+    padding: 0 var(--padding3);
+   display: flex;
+   justify-content: space-between;
+}
+
+.Cart{
+
+    width: 60%;
+    background-color: rgb(249, 249, 243);
+    border: 1px #2d2929;
+}
+
+.tabcart th , .tabcart td{
+padding: 15px;
+text-align: left;
+border-bottom: 1px solid #ddd;
+}
+
+.tabcart th{
+    background-color: var(--BlueColor);
+    color: white;
+    border-radius: 5px;
+}
+
+td span{
+    margin-bottom: 10px;
+}
+
+
+.contitr .tabcart [type="number"] {
+ 
+    border: 10px;
+    width: 50px;
+   padding:5px;
+    text-align: center;
+}
+
+.karta{
+  padding: 0 5% 0 0;
+}
+
+.Cart{
+        width: 2%;
+        padding: 2px;
+        margin: 1px 0 ;
+    }
+
+.cart span{
+   word-spacing: 30px;
+    font-weight: bold;
+}
+
+.chek{
+    background-color: #f0ad4e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.chek:hover{
+    background-color: #ec971f;
+    padding: 11px 22px
+}
+
+.boc{
+    display: flex;
+    justify-content: space-between;
+    margin:   10px var(--padding);
+}
+
+.coupon{
+    background-color: rgb(238, 231, 231);
+    color: rgb(14, 1, 1);
+    padding: 10px 10%;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.coupon:hover{
+    border: solid black;
+    background-color: #fdfcf9;
+    padding: 12px 20% 20px 20px;
+}
+.apply{
+    background-color: #f0ad4e;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.apply:hover{
+    border: solid black;
+    background-color: #ec971f;
+    padding: 12px 20% 20px 20px;
+}
+
+.updat{
+    background-color:#0A2357;
+    color: white;
+    padding: 10px 8%;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.updat:hover{
+    border: solid black;
+    background-color: #ec971f;
+    padding: 12px 20% 20px 20px;
+}
+
+
+.nmbr{
+    width: 100px;
+    height: 50px;
+}
+
+
+@media only screen and (max-width: 600px){
+    
+    .contitr , .boc{
+        flex-direction: column;
+    } 
 }
 /*Footer*/
 footer {
