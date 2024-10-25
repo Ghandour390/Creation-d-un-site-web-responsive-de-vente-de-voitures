@@ -24,13 +24,21 @@ body {
     background-color: transparent;
     padding: 15px 30px;
     width: 100vw;
+    height: 100px;;
     z-index: 1000;
+
 }
 
 .navbar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 12px;
+
+}
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: background-color 0.3s ease;
 }
 
 .menu-toggle {
@@ -200,12 +208,60 @@ body {
     margin-top: 10px;
     font-size: 16px;
 }
+
+/* Responsive styles for max-width 600px */
+@media (max-width: 600px) {
+    .Banner_section {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        height: 100vh;
+    }
+
+    .banner-text {
+display: flex;
+flex-direction: column; 
+justify-content: center;
+align-items: center;  
+margin-top: auto;
+margin-bottom: auto;
+     max-width: 90%;
+    }
+
+    .banner-text h1 {
+        font-size: 32px;
+    }
+
+    .banner-text p {
+        font-size: 14px;
+    }
+
+    .bntB {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-btn2 {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .bntB p {
+        font-size: 14px;
+    }
+}
 /* Popular Markes Section */
 .popular-markes-section {
     text-align: center;
     padding: 40px 20px;
 }
-
+#mark-img-size{
+    height:100px;
+    width:100px;
+}
 .popular-markes-section h2 {
     font-size: 24px;
     font-weight: bold;
@@ -632,11 +688,13 @@ p {
     align-items: center;
     gap: 5px;
     margin-bottom: 10px;
+    width: 15px;
+    height: 15px;
 }
 
-.shop-stars img {
-    width: 16px;
-    height: 16px;
+#bag-add-to-cart {
+    width: 22px;
+    height: 22px;
 }
 
 .part-2 {
@@ -658,9 +716,10 @@ p {
 
 .add-to-cart {
     background-color: #f5c24b72;
-    border-radius: 50%;
+    border-radius: 30%;
     padding: 10px;
     cursor: pointer;
+    height: 42px;
     transition: transform 0.3s ease;
 }
 
